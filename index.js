@@ -1,6 +1,7 @@
 import express from 'express';
 const app = express();
 
+const fruits = [ 'Mango','']
 app.get('/fruits',(req,res)=>
 {
     res.json({
