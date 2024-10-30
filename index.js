@@ -4,16 +4,16 @@ const app = express();
 // const fruits = [ 'Mango','banana', 'Apple']
 const fruits = [
     {
-        id:1 ,  name:apple , price : 100
+        id:1, name : "Apple", price : 100
     },
     {
-        id:2, name : banana, price : 50
+        id:2, name : "banana", price : 50
     },
     {
-        id:3, name: mango, price:200
+        id:3, name: "mango", price:200
     },
     {
-        id:4,name: pineapple , price:60
+        id:4,name: "pineapple" , price:60
     }
 ]
 app.get('/fruits',(req,res)=>
