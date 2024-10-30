@@ -8,6 +8,13 @@ app.get('/fruits',(req,res)=>
     })
 
 })
+app.get('/health',(req,res)=>
+    {
+        res.json({
+            msg:"Api Fetch sucessfully"
+        })
+    
+    })
 const Port= 5000;
 app.listen(Port,()=>
 {
