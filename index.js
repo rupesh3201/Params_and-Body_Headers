@@ -21,16 +21,15 @@ app.get('/fruits',(req,res)=>
 {
     const {price} = req.query
     const filtredfruits = fruits.filter((fruit)=>{
-        if(fruits.price==price)
+        if(fruit.price == price)
         {
-            return fruits
+            return fruit
         }
 
     })
     res.json({
         sucess:true,
-        data:fruits,
-        data2:filtredfruits, 
+        data:filtredfruits, 
         msg:"data Fetch sucessfully"
 
       
