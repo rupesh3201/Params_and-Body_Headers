@@ -21,9 +21,13 @@ app.get('/fruits',(req,res)=>
 {
     const {price} = req.query
     const filtredfruits = fruits.filter((fruit)=>{
+        if(!price)
+        {
+            return true;
+        }
         if(fruit.price == price)
         {
-            return fruit
+            return fruit;
         }
 
     })
