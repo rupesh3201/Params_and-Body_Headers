@@ -41,23 +41,18 @@ app.get('/fruits',(req,res)=>
 
 })
 // path parameter
-app.get(/fruits/1,(req,res)=>
+app.get("/fruits/1",(req,res)=>
 {
   const fruit = fruits.find((fruit)=>{
-    if(fruit.id==1)
+    if(fruit.id == 1)
     {
         return true;
     }
-   
-
-  })
-  res.json({
-    
-    sucess:true,
-    data:fruit, 
-    msg:"data Fetch sucessfully"
-
-
+    res.json({
+        sucess:true,
+        data:fruit, 
+        msg:"data Fetch sucessfully"
+      });
   })
 })
 app.get('/health',(req,res)=>
