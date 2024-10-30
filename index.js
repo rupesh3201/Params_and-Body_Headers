@@ -48,6 +48,15 @@ app.get(/fruits/1,(req,res)=>
     {
         return true;
     }
+   
+
+  })
+  res.json({
+    
+    sucess:true,
+    data:fruit, 
+    msg:"data Fetch sucessfully"
+
 
   })
 })
