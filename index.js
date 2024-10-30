@@ -40,6 +40,17 @@ app.get('/fruits',(req,res)=>
     })
 
 })
+// path parameter
+app.get(/fruits/1,(req,res)=>
+{
+  const fruit = fruits.find((fruit)=>{
+    if(fruit.id==1)
+    {
+        return true;
+    }
+
+  })
+})
 app.get('/health',(req,res)=>
     {
         res.json({
