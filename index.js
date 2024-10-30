@@ -1,11 +1,14 @@
 import express from 'express';
 const app = express();
 
-const fruits = [ 'Mango','']
+const fruits = [ 'Mango','banana', 'Apple']
 app.get('/fruits',(req,res)=>
 {
     res.json({
+        sucess:true,
+        data:fruits,
         msg:"data send sucessfully"
+      
     })
 
 })
