@@ -32,6 +32,11 @@ const Weafers = [
     }
 ]
 
+app.get("/Weafers", (req,res)=>
+{
+    const Weafers = Weafers.
+
+})
 app.get("/fruits",(req,res)=>
     
 {
