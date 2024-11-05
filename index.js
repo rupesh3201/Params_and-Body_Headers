@@ -25,7 +25,7 @@ const Weafers = [
         id:2, name : "moog-dal", price : 50
     },
     {
-        id:3, name: "", price:200
+        id:3, name: "chataka-pataka", price:200
     },
     {
         id:4,name: "pineapple" , price:60
