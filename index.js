@@ -22,10 +22,10 @@ const Weafers = [
         id:1, name : "Tede-Mede", price : 100
     },
     {
-        id:2, name : "", price : 50
+        id:2, name : "moog-dal", price : 50
     },
     {
-        id:3, name: "mango", price:200
+        id:3, name: "", price:200
     },
     {
         id:4,name: "pineapple" , price:60
