@@ -16,15 +16,28 @@ const fruits = [
         id:4,name: "pineapple" , price:60
     }
 ]
-app.get('/fruits',(req,res)=>
+
+const Weafers = [
+    {
+        id:1, name : "Tede-Mede", price : 100
+    },
+    {
+        id:2, name : "", price : 50
+    },
+    {
+        id:3, name: "mango", price:200
+    },
+    {
+        id:4,name: "pineapple" , price:60
+    }
+]
+
+app.get("/fruits",(req,res)=>
     
 {
     const {price} = req.query
     const filtredfruits = fruits.filter((fruit)=>{
-        if(!price)
-        {
-            return true;
-        }
+       
         if(fruit.price == price)
         {
             return fruit;
